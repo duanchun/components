@@ -54,7 +54,7 @@ void tuya_com_link_list_clear(link_queue_t *q)
 	q = NULL;
 }
 //向队列插入一个结点  
-link_node_t* tuya_com_link_list_node_insert(link_queue_t *q,int data)
+link_node_t* tuya_com_link_list_node_insert(link_queue_t *q,uint32_t data)
 {  
     link_node_t *node;  
     node = (link_node_t*)tuya_ble_malloc(sizeof(link_node_t));  
